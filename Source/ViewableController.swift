@@ -190,11 +190,11 @@ class ViewableController: UIViewController {
         self.view.addGestureRecognizer(tapRecognizer)
 
         if viewable?.type == .image {
-            let doubleTapRecognizer = UITapGestureRecognizer(target: self, action: #selector(ViewableController.doubleTapAction))
-            doubleTapRecognizer.numberOfTapsRequired = 2
-            self.zoomingScrollView.addGestureRecognizer(doubleTapRecognizer)
-
-            tapRecognizer.require(toFail: doubleTapRecognizer)
+//            let doubleTapRecognizer = UITapGestureRecognizer(target: self, action: #selector(ViewableController.doubleTapAction))
+//            doubleTapRecognizer.numberOfTapsRequired = 2
+//            self.zoomingScrollView.addGestureRecognizer(doubleTapRecognizer)
+//
+//            tapRecognizer.require(toFail: doubleTapRecognizer)
         }
     }
 
